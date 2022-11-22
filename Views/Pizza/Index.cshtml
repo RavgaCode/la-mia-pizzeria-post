@@ -19,7 +19,9 @@
                     <th scope="row"><a>@pizza.Id</a></th>
                     <td>@pizza.Name</td>
                     <td><img src="@pizza.Image" alt="@pizza.Name"/></td>
-                        <td><a href="@Url.Action("Details",new {id = pizza.Id})" role="button" class="btn btn-primary">Vedi dettagli</a></td>
+                        <td><a href="@Url.Action("Details",new {id = pizza.Id})" role="button" class="btn btn-primary">Vedi dettagli</a>
+                            <a href="@Url.Action("Update",new {id = pizza.Id})" role="button" class="btn btn-primary">Modifica</a>
+                        </td>
                 </tr>
             }
         </tbody>
